@@ -1,0 +1,126 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/*colors*/
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--very-dark-cyan: hsl(179, 100%, 13%);
+	--transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+	--very-light-gray-bgc-hd-btn: hsl(0, 0%, 95%);
+}
+
+body {
+	font-size: 15px;
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight: normal;
+	color: var(--transparent-white-paragraphs);
+	background-color: var(--very-light-gray-bgc-hd-btn);
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 600px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.flex-container {
+		flex-direction: column;
+		margin: 20px 0;
+	}
+
+	.car-block-style {
+		padding: 20px 40px;
+		max-width: 350px;
+	}
+}
+
+.flex-car-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.car-block-style {
+	padding: 40px;
+	height: 500px;
+	max-width: 307px;
+}
+
+.car--orange-bgc {
+	background-color: var(--bright-orange);
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.car--green-bgc {
+	background-color: var(--dark-cyan);
+}
+
+.car--deep-green-bgc {
+	background-color: var(--very-dark-cyan);
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--very-light-gray-bgc-hd-btn);
+}
+
+.image-container {
+	width: 64px;
+	height: 40px;
+}
+
+.sedan {
+	background: transparent url("../images/icon-sedans.svg") no-repeat center/cover;
+}
+
+.suvs {
+	background: transparent url("../images/icon-suvs.svg") no-repeat center/cover;
+}
+
+.luxury {
+	background: transparent url("../images/icon-luxury.svg") no-repeat center/cover;
+}
+
+button {
+	border: none;
+	background-color: var(--very-light-gray-bgc-hd-btn);
+	padding: 15px 30px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.btn--primary-color {
+	color: var(--bright-orange);
+}
+
+.btn--secondary-color {
+	color: var(--dark-cyan);
+}
+
+.btn--third-color {
+	color: var(--very-dark-cyan);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: var(--very-dark-cyan);
+}
+
+.attribution a {
+	color: var(--bright-orange);
+	text-decoration: none;
+}
