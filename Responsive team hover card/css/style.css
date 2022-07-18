@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --deepBlue: #092e4a;
+    --lightBlue: #0a91ce;
+    --deepPink: #b0024e;
+    --white: #fff;
+    --dark:#333;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1088px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.crew-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh; /* only for best view */
+
+}
+
+.crew-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    min-width: 300px;
+    min-height: 350px;
+    border-radius: 20px;
+    transition: min-width 0.5s;
+    transition-delay: 0.2s;
+}
+
+.crew-card:nth-child(2) {
+    background-color: var(--deepPink);
+}
+
+.crew-card:hover {
+    min-width: 600px;
+    transition-delay: 0s;
+}
+
+.crew-card .crew-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.crew-card .crew-circle::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightBlue);
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.crew-card:hover .crew-circle::before {
+    clip-path: circle(400px at center);
+}
+
+.person-img {
+    position: relative;
+    max-width: 180px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    border-radius: 50%;
+    border: 3px dashed var(--white);
+}
+
+.crew-card:hover .crew-circle .person-img {
+    transform: scale(0);
+    transition-delay: 0s;
+
+}
+
+.crew-content {
+    position: relative;
+    left: 20%;
+    width: 50%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.crew-card:hover .crew-content {
+    left:0;
+    opacity:1;
+    visibility: visible;
+    transition-delay: 0.5s;
+
+}
+
+.crew-content .person-name {
+    color:var(--white);
+    text-transform: uppercase;
+    font-size:1.5rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+}
+
+.crew-content .person-description {
+    color:var(--white);
+    margin-top:10px;
+}
+
+.btn {
+    position: relative;
+    top:30px;
+    margin-top:20px;
+    padding: 10px 20px;
+    background-color: var(--white);
+    border-radius:100vh;
+    color:var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.person-img--full {
+    position: absolute;
+    top:50%;
+    left:75%;
+    transform: translate(-50%, -50%) scale(0);
+    max-height: 500px;
+    height: 100%;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.crew-card:hover .person-img--full {
+    transform: translate(-50%, -50%) scale(1);
+    transition-delay:0.5s;
+}
+
