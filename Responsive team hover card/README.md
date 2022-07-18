@@ -23,4 +23,4 @@ Responsive Team Hover Card
 
 ## Demo
 
-https://dominik-kantorowicz.netlify.app/
+https://team-member-card.netlify.app/s
