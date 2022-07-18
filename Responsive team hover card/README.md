@@ -1,6 +1,4 @@
-# Form with animated checkbox
-
-Responsive Team Hover Card
+# Responsive Team Hover Card
 
 ### Built with
 
