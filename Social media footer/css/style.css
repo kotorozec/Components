@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --deepBlue: #092e4a;
+    --lightBlue: #0a91ce;
+    --deepPink: #b0024e;
+    --white: #fff;
+    --dark:#333;
+    --instagram:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    --linkedin:#0e76a8;
+    --facebook:#4267B2;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--deepBlue);
+}
+
+/*Only for best view*/
+.lorem-section {
+    min-height: 50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-size:70px;
+    color:var(--white);
+}
+
+.lorem--wavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+/*Footer section*/
+.footer-section {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    background-color: var(--lightBlue);
+}
+
+.footer-section::before {
+    content: 'Check our social media';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 40px;
+    padding-top:130px;
+    color: var(--white);
+    top:50%;
+    width: 100%;
+    min-height: 250px;
+    border-bottom: 0;
+    z-index: 10;
+    border-top:1px solid var(--white);
+    background-color: var(--lightBlue);
+}
+
+/*Social media icons elements*/
+.icons {
+    position: relative;
+    display:flex;
+}
+
+.icons li {
+    position: relative;
+    list-style:none;
+    margin:10px;
+}
+
+.icons li a {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding:70px;
+    top:0;
+    width:80px;
+    height:80px;
+    color:var(--white);
+    font-size:100px;
+    border: 2px solid var(--white);
+    border-radius:25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: top 0.7s, z-index 0.7s, transform 0.7s;
+    transition-delay: 0.3s,0.3s,0s;
+    z-index: 1;
+}
+
+.icons li a:hover {
+    top:50%;
+    transition-delay: 0.5s,0s,0s;
+    transform:translateY(-50%);
+    z-index: 11;
+}
+
+/*Icon shadow hover*/
+.icons li a::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50px;
+    height:100%;
+    background: rgba(255,255,255,0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: 0.6s;
+}
+
+.icons li a:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+}
+
+/*Logo color*/
+.git {
+    background-color: var(--dark);
+}
+
+.inst {
+    background:var(--instagram);
+}
+.linked {
+    background:var(--linkedin);
+}
+
+.face {
+    background:var(--facebook);
+}
