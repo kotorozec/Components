@@ -1,0 +1,24 @@
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+        color: var(--white);
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .icons li {
+        margin: 5px;
+    }
+
+    .icons li a {
+        padding: 15px;
+        font-size:30px;
+        width: 60px;
+        height: 60px;
+    }
+    .footer-section::before {
+
+        font-size: 30px;
+        padding-top: 30px;
+        color: var(--white);
+    }
+}
