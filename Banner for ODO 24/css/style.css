@@ -1,0 +1,95 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.button {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 2px 20px;
+	text-align: center;
+	font-size: 22px;
+	text-transform: uppercase;
+	border-radius: 100px;
+	background: #0a91ce;
+	color: #fff;
+	cursor: pointer;
+	border: 1px solid #0a91ce;
+	font-weight: 300;
+	text-decoration: none;
+}
+.container {
+	max-width: 1060px;
+	margin: auto;
+	padding: 0 15px;
+}
+/*Styles end */
+.section-advert-flex {
+	margin-top: 20px;
+	background-color: #092e4a;
+	height: 350px;
+	padding: 0;
+	margin-bottom: 30px;
+}
+.flex-ads {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.flex-first-advert-txt {
+	color: #fff;
+	-ms-flex-preferred-size:470px;
+	flex-basis:470px;
+}
+.front-person, .front-person-arrow {
+	position: relative;
+	top: -25px;
+}
+.flex-first-advert--statement {
+	font-size: 38px;
+	font-weight: bold;
+	padding-bottom:20px;
+	margin-top:-20px;
+}
+.flex-first-advert-txt p {
+	font-size: 26px;
+	font-weight: normal;
+}
+.button--width {
+	font-size: 22px;
+	text-transform: initial;
+	padding: 10px 20px;
+	font-weight: 500;
+	max-width: 150px;
+	z-index: 101;
+	position: relative;
+	left: -100px;
+	line-height:120%;
+}
+.flex-third-advert-button {
+	position: relative;
+	left: 0;
+	z-index: 100;
+	top: 50px;
+}
+.flex-add-img--index {
+	z-index: 100;
+	position: relative;
+	max-height: 370px;
+	bottom: -5px;
+}
+.front-person-arrow::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 50px;
+	min-width: 350px;
+	min-height: 350px;
+	background: transparent url('https://odo24.pl/data/image/advertisement-back-arrow-white.png') no-repeat top center/contain;
+	z-index: 2;
+}
