@@ -1,0 +1,24 @@
+@media screen and (min-width: 600px) {
+    .standards_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "CIMP ISO-27001 ISO-29134"
+         "IISO-27001 ISO-3100 Prince"
+         "ISO-19011 ISO-27005 ISO-27005";
+        gap: 20px;
+        min-height: 100vh;
+        place-content: center;
+    }
+
+    .container {
+        max-width: 1060px;
+        margin: auto;
+        padding: 0 15px;
+    }
+
+    .standards_paragraph {
+        font-size: 19px;
+        font-weight: 400;
+    }
+}
